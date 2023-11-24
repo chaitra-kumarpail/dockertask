@@ -7,13 +7,6 @@ pipeline{
 	}
 
 	stages {
-	    
-	    stage('gitclone') {
-
-			steps {
-				git 'https://github.com/chaitra-kumarpail/dockertask.git'
-			}
-		}
 
 		stage('Build') {
 
