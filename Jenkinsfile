@@ -26,6 +26,7 @@ pipeline{
 
 			steps {
 				sh 'docker tag amazon/dockertask:latest chaitrasp/dockertask:latest'
+				sh 'docker push chaitrasp/dockertask:latest'
 			}
 		}
 	}
