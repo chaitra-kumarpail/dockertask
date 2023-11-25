@@ -25,7 +25,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'docker push chaitrasp/dockertest:latest'
+				sh 'docker push chaitrasp/amazon/dockertask:latest'
 			}
 		}
 	}
