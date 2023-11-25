@@ -6,7 +6,7 @@ RUN wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.96/bin/apache-tomcat-8.5.
 RUN tar -zxvf apache-tomcat-8.5.96.tar.gz
 WORKDIR /apache-tomcat-8.5.96
 COPY Amazon.war webapps/
-ADD /home/csp/Amazon.war
+ADD /home/csp/Amazon.war .
 EXPOSE 8080
 CMD ["bin/catalina.sh", "run"]
 
