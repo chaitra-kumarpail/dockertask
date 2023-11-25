@@ -11,7 +11,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t amazon/dockertask:latest .'
+				sh 'docker build -t amazon/dockertask:latest -f Dockerfile .'
 			}
 		}
 
